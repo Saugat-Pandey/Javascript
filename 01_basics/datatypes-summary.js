@@ -18,6 +18,10 @@ const anotherId = Symbol('123');
 
 const bigNumber = 756756567567576567n
 
+// Reference (Non primitive)
+
+// Array, Objects, functions   
+
 const heros = ["shaktiman", "naagraj", "doga"]
 
 let myObj = {
@@ -29,11 +33,33 @@ const myFunction = function() {
     console.log("Hello World!");    
 }
 
-console.log(typeof bigNumber);
+// console.log(typeof bigNumber);
+
+
+// Stack (Primitive), Heap (Non primitive)
+
+let myYoutubename = "saugatpandeydotcom"
+
+let anothername = myYoutubename
+anothername = "saugatpandey"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "saugat@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
 
 
 
 
-// Reference (Non primitive)
 
-// Array, Objects, functions   
+
